@@ -19,14 +19,14 @@ WLTUTIL.load_folders({
     "content/jokers/uncommon",
     "content/jokers/rare",
     "content/jokers/legendary",
+    "content/organs",
+    "content/playlist",
+    "content/playlist/jokers",
     "content/jokers/boost",
     "content/jokers/boost/common",
     "content/jokers/boost/uncommon",
     "content/jokers/boost/rare",
     "content/jokers/boost/legendary",
-    "content/organs",
-    "content/playlist",
-    "content/playlist/jokers"
 })
 
 assert(SMODS.load_file("content/deckskins.lua"))()
