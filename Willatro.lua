@@ -31,6 +31,3 @@ WLTUTIL.load_folders({
 
 assert(SMODS.load_file("content/deckskins.lua"))()
 assert(SMODS.load_file("content/quips.lua"))()
-
-assert(SMODS.load_file("content/jokers.lua"))()
-assert(SMODS.load_file("content/boostedjokers.lua"))()
