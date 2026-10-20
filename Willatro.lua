@@ -1,19 +1,25 @@
-assert(SMODS.load_file("src/jokers.lua"))()
-assert(SMODS.load_file("src/blinds.lua"))()
-assert(SMODS.load_file("src/enhancements.lua"))()
-assert(SMODS.load_file("src/backs.lua"))()
-assert(SMODS.load_file("src/vouchers.lua"))()
-assert(SMODS.load_file("src/challenges.lua"))()
-assert(SMODS.load_file("src/organs.lua"))()
-assert(SMODS.load_file("src/functions.lua"))()
-assert(SMODS.load_file("src/boostedjokers.lua"))()
-assert(SMODS.load_file("src/pokerhands.lua"))()
-assert(SMODS.load_file("src/modicon.lua"))()
-assert(SMODS.load_file("src/quips.lua"))()
-assert(SMODS.load_file("src/crossmod.lua"))()
-assert(SMODS.load_file("src/playlist.lua"))()
-assert(SMODS.load_file("deckskins.lua"))()
-assert(SMODS.load_file("src/seals.lua"))()
-assert(SMODS.load_file("src/treats.lua"))()
-assert(SMODS.load_file("src/spectrals.lua"))()
-assert(SMODS.load_file("src/tarots.lua"))()
+assert(SMODS.load_file("util.lua"))()
+assert(SMODS.load_file("content/atlas.lua"))()
+assert(SMODS.load_file("content/functions.lua"))()
+
+WLTUTIL.load_folders({
+    "content/vouchers",
+    "content/decks",
+    "content/challenges",
+    "content/seals",
+    "content/tarots",
+    "content/crossmod",
+    "content/spectrals",
+    "content/enhancements",
+    "content/blinds",
+    "content/poker_hands",
+    "content/treats"
+})
+
+assert(SMODS.load_file("content/deckskins.lua"))()
+assert(SMODS.load_file("content/quips.lua"))()
+
+assert(SMODS.load_file("content/jokers.lua"))()
+assert(SMODS.load_file("content/boostedjokers.lua"))()
+assert(SMODS.load_file("content/organs.lua"))()
+assert(SMODS.load_file("content/playlist.lua"))()
