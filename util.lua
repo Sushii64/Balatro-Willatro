@@ -3,7 +3,9 @@ WLTUTIL = {}
 function WLTUTIL.load_folder(path)
 	local items = SMODS.NFS.getDirectoryItems(SMODS.current_mod.path .. path)
 	for _, item in ipairs(items) do
-		assert(SMODS.load_file(path .. "/" .. item))()
+		if item:match".lua$" then
+			assert(SMODS.load_file(path .. "/" .. item))()
+		end
 	end
 end
 
